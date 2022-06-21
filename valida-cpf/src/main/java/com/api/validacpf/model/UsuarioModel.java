@@ -10,10 +10,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/* Classe que irá ser persistida 
+ * na base de dados
+ */
+
 @Entity
 @Table(name = "TB_VALIDA_CPF")
-public class ValidaCpfModel implements Serializable {
+public class UsuarioModel implements Serializable {
 	private static final long serialVersionUID = 1L;
+
+	/*
+	 * Atributos que possuem nullable, unique ou length precisam seguir essa regra
+	 * na entrada de dados
+	 */
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

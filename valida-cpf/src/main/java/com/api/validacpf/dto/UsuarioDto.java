@@ -3,7 +3,12 @@ package com.api.validacpf.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-public class ValidaCpfDto {
+/* Atributos que serão enviados
+ * pelo usuário para serem alocados
+ * e tramitados entre as camadas
+ */
+
+public class UsuarioDto {
 
 	@NotBlank
 	@Size(max = 11)
