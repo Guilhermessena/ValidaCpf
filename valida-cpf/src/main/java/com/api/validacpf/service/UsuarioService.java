@@ -1,7 +1,10 @@
 package com.api.validacpf.service;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
+import com.api.validacpf.model.UsuarioModel;
 import com.api.validacpf.repository.UsuarioRepository;
 
 	/*
